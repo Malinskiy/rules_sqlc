@@ -82,6 +82,9 @@ sqlc_package = rule(
         "package": attr.string(
             doc = "Use this for the package name rather than the rule name.",
         ),
+        "sql_package": attr.string(
+            doc = "Either pgx/v4 or database/sql. Defaults to database/sql."
+        ),
         "queries": attr.label_list(
             allow_files = [".sql"],
             doc = "Source SQL query files to compile for this library",

@@ -70,6 +70,7 @@ def sqlc_configure(ctx, params, queries, schemas, out, config_path_depth):
             packages = [struct(
                 name = params.package or ctx.label.name,
                 engine = params.engine,
+                sql_package = params.sql_package,
                 emit_empty_slices = params.emit_empty_slices,
                 emit_exact_table_names = params.emit_exact_table_names,
                 emit_interface = params.emit_interface,

@@ -20,6 +20,7 @@ SQLC_VERSIONS = {
     "1.14.0": {
         "darwin_amd64": ("sqlc_1.14.0_darwin_amd64.tar.gz", "142edd3a92716432ee5b5dd48719e2192530c6b29812b36269fc30f51c41fefb"),
         "linux_amd64": ("sqlc_1.14.0_linux_amd64.tar.gz", "80f97a263903bc2376fb2af94ed65ea9846c02863c2da43520fcc4bc13cee849"),
+        "darwin_arm64": ("sqlc_1.14.0_darwin_arm64.tar.gz", "c339524113d5afd646144aafd4a98838029b9db52c4c7e7862fc3280ba7c84fe"),
     },
     "1.6.0": {
         "darwin_amd64": ("sqlc-v1.6.0-darwin-amd64.tar.gz", "386b6fea4e402c316c4218176abdd3d4e833f209999ef9154d78b3e3b2ec563c"),

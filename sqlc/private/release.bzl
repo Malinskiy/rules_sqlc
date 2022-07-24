@@ -47,7 +47,7 @@ def _detect_host_platform(ctx):
         uname = arch_result.stdout.strip()
         if uname in ("aarch64", "arm64"):
             goarch = "arm64"
-        if uname in ("armv6l", "armv7l"):
+        elif uname in ("armv6l", "armv7l"):
             goarch = "arm"
         elif uname in ("amd64", "x86_64"):
             goarch = "amd64"
@@ -136,7 +136,7 @@ _sqlc_download_release = repository_rule(
     attrs = {
         "goos": attr.string(),
         "goarch": attr.string(),
-        "urls": attr.string_list(default = ["https://github.com/kyleconroy/sqlc/releases/download/v{}/{}", "https://github.com/Malinskiy/sqlc/releases/download/v{}/{}"]),
+        "urls": attr.string_list(default = ["https://github.com/Malinskiy/sqlc/releases/download/v{}/{}", "https://github.com/kyleconroy/sqlc/releases/download/v{}/{}"]),
         "version": attr.string(),
     },
 )
